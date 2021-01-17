@@ -11,7 +11,6 @@ public class ContatoSteps {
 
 	private ContatoPage contatoPage;
 	private Browser browser;
-	private ContatoE2ETest contatoE2ETest;
 	
 	@Dado("que o usuario esta em CONTATO")
 	public void que_o_usuario_esta_em_contato() {
@@ -30,8 +29,8 @@ public class ContatoSteps {
 		contatoPage.submitForm();
 	}
 	
-	@Entao("o sistema apresenta a mensagem de erro")
-	public void o_sistema_apresenta_a_mensagem_de_erro() {
+	@Entao("o sistema apresenta a mensagem de erro na pagina contato")
+	public void o_sistema_apresenta_a_mensagem_de_erro_na_pagina_contato() {
 		System.out.println("Mensagem der obrigatoriedade nao apresentada");//O SISTEMA NÃO APRESENTOU A MENSAGEM DE ERRO
 		browser.clean();
 	}

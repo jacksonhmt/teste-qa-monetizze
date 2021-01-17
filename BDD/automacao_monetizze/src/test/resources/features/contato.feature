@@ -9,7 +9,7 @@ Contexto:
 Cenario: Nao Preencher os campos obrigatorios
 	Quando o usuario nao preenche os campos
 	E Acionar a opcao ENVIAR
-	Entao o sistema apresenta a mensagem de erro
+	Entao o sistema apresenta a mensagem de erro na pagina contato
 	
 Cenario: Campo telefone somente numeros
 	Quando o usuario preencher letras no campo telefone

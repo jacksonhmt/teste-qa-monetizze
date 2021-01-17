@@ -4,13 +4,13 @@
 Funcionalidade: Detalhamento dos produtos
 
 Contexto:
-Dado que o usuário está página LOJA 
+Dado que o usuario esta na pagina LOJA
 	
 Cenario: Detalhes do Vinho
-	Quando o usuário clicar em um VINHO
-	Entao o sistema mostra os detalhes do vinho selecionado
+	Quando o usuario acionar algum vinho
+	Entao o sistema apresenta os detalhes do vinho selecionado
 	
 Cenario: Adicionar ao Carrinho 
 	Quando o usuario clicar na opção ADICIONAR AO CARRINHO
 	Entao o sistema insere o item no carrinho de compras
-	E direciona para página CARRINHO DE COMPRAS
+	E o usuario é direcionado para o CARRINHO DE COMPRAS
