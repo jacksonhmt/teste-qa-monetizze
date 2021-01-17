@@ -22,13 +22,13 @@ public class BrowserFactory {
 
 	private  WebDriver initChromeDriver() {
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Users\\jacks\\Área de Trabalho\\Nova pasta\\teste-qa-monetizze\\BDD\\automacao_monetizze\\drivers\\chromedriver.exe");
+				"C:\\Users\\jacks\\Desktop\\teste\\1821-bdd-cucumber-java\\drivers\\chromedriver.exe");
 		return new ChromeDriver();
 	}
 
 	private  WebDriver initFirefoxDriver() {
 		System.setProperty("webdriver.gecko.driver",
-				"D:\\Users\\jacks\\Área de Trabalho\\Nova pasta\\teste-qa-monetizze\\BDD\\automacao_monetizze\\drivers\\geckodriver.exe");
+				"C:\\Users\\jacks\\Desktop\\teste\\1821-bdd-cucumber-java\\drivers\\geckodriver.exe");
 		return new FirefoxDriver();
 	}
 }
