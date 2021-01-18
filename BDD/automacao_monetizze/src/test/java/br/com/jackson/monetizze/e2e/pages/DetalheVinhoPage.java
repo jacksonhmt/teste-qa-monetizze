@@ -6,7 +6,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DetalheVinhoPage {
-private WebDriver driver;
+	
+	private WebDriver driver;
 	
 	private static String PAGE_URL = "http://monetizzetesteqa.s3-website-us-east-1.amazonaws.com/shop-single.html";
 	

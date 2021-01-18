@@ -5,7 +5,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "classpath:features", tags = "@produto")
+@CucumberOptions(features = "classpath:features", tags = "@detalheVinho")
 public class LojaCucumberRunner {
 
 }

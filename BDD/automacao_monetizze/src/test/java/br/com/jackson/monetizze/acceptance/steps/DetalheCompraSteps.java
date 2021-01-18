@@ -8,6 +8,7 @@ public class DetalheCompraSteps {
 	
 	@Dado("que o usuario está na pagina DETALHES DA COMPRA")
 	public void que_o_usuario_está_na_pagina_detalhes_da_compra() {
+		
 	}
 	
 	@Quando("o usuario nao preencher os dados pessoais")

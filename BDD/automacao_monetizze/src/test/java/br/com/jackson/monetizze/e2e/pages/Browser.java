@@ -19,6 +19,10 @@ public class Browser {
 	public ContatoPage getContatoPage() {
 		return new ContatoPage(driver);
 	}
+	
+	public DetalheVinhoPage getDetalheVinhoPage() {
+		return new DetalheVinhoPage(driver);
+	}
 
 	public void clean() {
 		driver.manage().deleteAllCookies();
