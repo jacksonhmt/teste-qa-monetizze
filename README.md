@@ -11,6 +11,6 @@
 ## Como Executar?
 1. Abrir o projeto maven no eclipse;
 2. Esperar todas as dependências serem baixadas;
-3. Atualizar o caminho do driver do firefox na classe "BrowserFactory" localizado nas pasta "src/test/java/br/com/jackson/monetizze/e2e/pages".
-   (Driver localizado em "automacao_monetizze" pasta -> "drivers")
+3. Atualizar o caminho do driver do firefox na classe "BrowserFactory" localizado na pasta "src/test/java/br/com/jackson/monetizze/e2e/pages".
+      (Driver localizado em "automacao_monetizze/drivers")
 4. Executar a classe "LojaCucumberRunner" localizada na pasta "src/test/java/br/com/jackson/monetizze/acceptance".
