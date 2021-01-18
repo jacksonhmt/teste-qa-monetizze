@@ -10,7 +10,7 @@ public class DetalheCompraPage {
 	
 	private WebDriver driver;
 	
-	private static String PAGE_URL = "http://monetizzetesteqa.s3-website-us-east-1.amazonaws.com/shop-single.html";
+	private static String PAGE_URL = "http://monetizzetesteqa.s3-website-us-east-1.amazonaws.com/checkout.html";
 	
 	public DetalheCompraPage(WebDriver driver) {
 		this.driver = driver;
@@ -22,7 +22,7 @@ public class DetalheCompraPage {
 	
 	public boolean estaNaPaginaDetalheCompra() {
 		esperaCarregarPaginaDetalheCompra();
-		return this.driver.getCurrentUrl().endsWith("/shop-single.html");
+		return this.driver.getCurrentUrl().endsWith("/checkout.html");
 	}
 	
 	public void esperaCarregarPaginaDetalheCompra() {
@@ -112,6 +112,7 @@ public class DetalheCompraPage {
 	}
 	
 	public void submitFinalizarCompra() {
+		estaNaPaginaDetalheCompra();
 		WebElement button = driver.findElement(By.className("btn-primary"));
 		button.submit();
 	}

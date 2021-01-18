@@ -23,6 +23,18 @@ public class Browser {
 	public DetalheVinhoPage getDetalheVinhoPage() {
 		return new DetalheVinhoPage(driver);
 	}
+	
+	public ProdutoPage getProdutoPage() {
+		return new ProdutoPage(driver);
+	}
+	
+	public CarrinhoPage getCarrinhoPage() {
+		return new CarrinhoPage(driver);
+	}
+	
+	public DetalheCompraPage detalheCompraPage() {
+		return new DetalheCompraPage(driver);
+	}
 
 	public void clean() {
 		driver.manage().deleteAllCookies();

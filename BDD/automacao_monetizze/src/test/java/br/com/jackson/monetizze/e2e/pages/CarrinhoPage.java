@@ -2,18 +2,25 @@ package br.com.jackson.monetizze.e2e.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.WebElement;
 
 public class CarrinhoPage {
 	private WebDriver driver;
 	
-	public boolean estaNaPaginaCarrinho() {
-		return true;
+	public CarrinhoPage(WebDriver driver) {
+		this.driver = driver;
 	}
 	
-	public void esperaCarregarPaginaCarrinho() {
-		WebDriverWait wait = new WebDriverWait(driver,2);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2[contains(text(),'Meu carrinho')]")));
+	public boolean estaNaPaginaCarrinho() {
+		return this.driver.getCurrentUrl().endsWith("/cart.html");
 	}
+	
+	public void verificandoProdutoAdicionado() {
+		driver.findElement(By.xpath("//h2[contains(text(),'Trius Cabernet France 2011')]")).isDisplayed();
+	}
+	
+	public void finalizarCompra() {
+		driver.findElement(By.xpath("//button[contains(text(),'Prosseguir')]\"")).click();
+	}
+	
 }

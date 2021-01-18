@@ -34,6 +34,6 @@ public class DetalheVinhoPage {
 	}
 
 	public void acionarBotaoComprar() {
-		
+		driver.findElement(By.linkText("Comprar")).click();
 	}
 }
